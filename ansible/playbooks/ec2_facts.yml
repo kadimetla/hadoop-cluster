@@ -1,0 +1,12 @@
+---
+- name: test ec2 facts
+  hosts: spark-cluster
+  
+  tasks:
+  - name: ec2 facts
+    ec2_metadata_facts:
+  - debug: var=ansible_ec2_instance_id
+  - name: ec2 facts1
+    ec2_metadata_facts:
+  - debug:
+      var: hostvars 

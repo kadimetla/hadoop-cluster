@@ -1,0 +1,7 @@
+---
+- name: os
+  hosts: spark-cluster
+  gather_facts: true
+
+  tasks:
+  - debug: var=ansible_distribution

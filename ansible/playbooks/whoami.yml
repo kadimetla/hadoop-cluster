@@ -1,0 +1,17 @@
+---
+- name: top level name 
+  hosts: spark-cluster
+
+  tasks:
+
+    - name: test 
+      command: id -un
+      register: login
+
+    - debug: msg="Logged in as user {{login.stdout}}"
+    
+    - name: test 
+      command: id -un
+      register: login
+
+    - debug: var=login
