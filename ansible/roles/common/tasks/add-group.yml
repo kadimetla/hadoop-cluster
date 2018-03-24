@@ -1,0 +1,4 @@
+- name: Create Group 
+  group:
+    name: hadoop 
+    state: present

@@ -1,0 +1,7 @@
+[spark-master]
+#spark-master.dataxpath.com ansible_host=10.0.1.15 ansible_user=ubuntu ansible_private_key_file=~/.ssh/hadoop-nodes-kp.pem
+#spark-master.dataxpath.com ansible_host=10.0.1.15 ansible_user=ubuntu
+spark-master.dataxpath.com ansible_host=54.149.23.60 ansible_user=ubuntu
+
+[spark-cluster:children]
+spark-master

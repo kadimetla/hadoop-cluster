@@ -1,0 +1,14 @@
+---
+- name: adi testing
+  hosts: spark-cluster
+  become: yes
+  gather_facts: true 
+
+  vars:
+    sudoers_filename: "dxp"
+    sudoers:
+      - name: "dxp"
+        users:
+          - "ALL"
+  roles:
+    - role: common

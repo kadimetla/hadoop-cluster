@@ -1,0 +1,4 @@
+---
+- import_tasks: install-python.yml
+- import_tasks: add-group.yml
+- import_tasks: add-user.yml
